@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+}
+
+.container-img {
+    width: 60vw;
+}
+
+.container-img>img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.container-form {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    margin-right: 300px;
+}
+
+.container-form-title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.container-form-title>h1 {
+    font: normal normal 900 43px/63px Heebo;
+    color: #7a241d;
+}
+
+.container-form-title>p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #7a241d;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin: 1em 0;
+}
+
+.form-control>input {
+    width: 370px;
+    height: 50px;
+    background: #e2c3a7 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 4px solid #2e1603;
+}
+
+.form-control-button>input {
+    width: 160px;
+    height: 50px;
+    background: #661d18 0% 0% no-repeat padding-box;
+    text-align: right;
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.form-control>label {
+    font: normal normal bold 16px/24px Heebo;
+    color: rgb(44, 44, 44);
+}
+
+.form-control-button>button {
+    background-color: rgb(44, 44, 44);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column;
+    }
+
+    .container-img {
+        width: 100%;
+    }
+
+    .container-form {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container-form-title {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form-control>input {
+        width: 100%;
+    }
+
+    .form-control-button>input {
+        width: 100%;
+    }
+}

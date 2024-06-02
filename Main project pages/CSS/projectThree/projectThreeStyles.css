@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #e76af5 0%, #c5bec8 100%) no-repeat;
+    z-index: 0;
+
+}
+
+.container-title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 337px;
+    z-index: 1;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 36px #00000087;
+    margin-bottom: 2em;
+}
+
+.container-title h1 {
+    font-family: "Satisfy", cursive;
+    font-size: 160px;
+    line-height: 231px;
+    font-weight: 400;
+}
+
+.container-title p {
+    font-family: "Varela Round", sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 0.5em;
+}
+
+.container-paragraph p {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-size: 24px;
+    line-height: 20px;
+    color: #F9F9F9;
+    opacity: 1;
+    margin-top: 1em;
+}
+
+form {
+    position:relative;
+    width: 50vw;
+    margin:auto;
+    z-index: 1;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+.form-control-name 
+.form-control-email {
+    display: flex;
+    flex-direction:column;
+    margin: 0 1em;
+}
+
+.form-control-name label {
+    margin-bottom: 0.5em;
+    color: #FFFFFF;
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    top: 671px;
+        left: 1486px;
+        width: 24px;
+        height: 20px;
+}
+
+.form-control-email label {
+    margin-bottom: 0.5em;
+    color: #FFFFFF;
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+        width: 38px;
+        height: 20px;
+        top: 671px;
+}
+
+.form-control-name input {
+            width: 400px;
+            height: 50px;
+            padding: 0.5em;
+            font-size: 1em;
+            background: #F6F6F624 0% 0% no-repeat padding-box;
+            border: 2px solid #FFFFFF;
+            border-radius: 10px;
+            opacity: 1;
+            margin: 1em;
+            
+        }
+
+.form-control-email input {
+        width: 400px;
+        height: 50px;
+        padding: 0.5em;
+        font-size: 1em;
+        background: #F6F6F624 0% 0% no-repeat padding-box;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+        opacity: 1;
+                        }
+
+
+.form-control-button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+    background: #FFFFFF;
+    opacity: 1;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1C1C1C;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container-title h1 {
+        font-size: 8vw;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .container-title p {
+        font-size: 3.5vw;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .container-paragraph p {
+        font-size: 2.5vw;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .form-control {
+        width: 90%;
+        /* Adjusted width for smaller screens */
+        max-width: 400px;
+        /* Maximum width for smaller screens */
+    }
+
+    .form-control label {
+        font-size: 14px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .form-control input,
+    .form-control button {
+        font-size: 0.9em;
+        /* Adjusted font size for smaller screens */
+    }
+}

@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #004d40;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.header {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #00bcd4;
+    color: white;
+}
+
+.boxheader {
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+
+.wahicon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 80px;
+    height: auto;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #E5EEFF;
+    padding: 60px;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.feature-image {
+    width: 40px;
+    height: auto;
+}
+
+.map-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.contact-form {
+    width: 300px;
+    margin: 200px auto;
+    margin-top: 0px;
+    font-weight: bolder;
+}
+
+.formpg {
+    font-weight: lighter;
+    font-size: 0.8em;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 20px;
+    border: none;
+    border-bottom: 3px solid #00bcd4;
+    background-color: #E5EEFF;
+    font-style: italic;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.map {
+    width: 50%;
+    height: 800px;
+    background: #00bcd4;
+    background-size: cover;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover .icon-img {
+    transform: scale(1.5);
+    /* Slightly enlarge the icon on hover */
+}
+
+.icon-img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00bcd4;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .map-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        width: 90%;
+        height: auto;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .header {
+        padding: 50px 0;
+    }
+
+    .boxheader {
+        width: 100%;
+        text-align: center;
+    }
+
+    .wahicon {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+}

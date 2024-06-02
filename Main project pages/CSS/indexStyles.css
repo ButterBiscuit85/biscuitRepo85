@@ -1,0 +1,333 @@
+/* styles.css */
+    body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    /* Set direction to right-to-left for Hebrew */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* header stays above other content */
+    box-sizing: border-box;
+}
+
+header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+header .profile {
+    display:flex;
+    color: white;
+    font-weight: bold;      
+    align-items:  center;
+    
+}
+
+header .profile img {
+border-radius: 50%;
+    margin-left: 10px;
+    height: 70px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 60px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: rgba(47, 47, 47, 1);
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero img {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 50%;
+    
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.hero .skills {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero .skills img {
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about-me {
+    padding: 35px 0;
+    text-align: center;
+    background-color: rgba(21, 36, 90, 0.671);
+    color: white;
+    font-weight: bold;
+    
+}
+
+.about-me h2 {
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.about-me button {
+    background-color: rgb(126, 136, 224);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.portfolio {
+    background-color: rgba(33, 33, 33, 1);
+    padding: 50px 0;
+    color: white;
+}
+
+.portfolio h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.portfolio .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+.portfolio .project-card {
+    background-color: rgba(47, 47, 47, 1);
+    border: 3px solid #dddddd;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    color: #dddddd;
+}
+
+.portfolio .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.portfolio .project-card h3 {
+    margin: 20px 0 10px;
+}
+
+.portfolio .project-card p {
+    font-size: 0.9em;
+    color: #dddddd;
+}
+
+.portfolio .project-card button {
+    background-color: rgb(126, 136, 224);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contact {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: right;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 500px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.contact form button {
+    background-color: rgba(33, 33, 33, 1);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+        
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover .icon-img {
+    transform: scale(1.5);
+    /* Slightly enlarge the icon on hover */
+}
+
+.icon-img {
+    width: 50px;
+    height: 50px;
+}
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+    
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .portfolio .project-card {
+        width: calc(50% - 20%);
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        height: 100px;
+        
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 5px;
+                
+    }
+
+    .hero .skills {
+        flex-direction:row;
+    }
+
+    .portfolio .project-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .about-me h2 {
+        font-size: 1.5em;
+    }
+
+    .portfolio h2 {
+        font-size: 1.5em;
+    }
+
+    .contact h2 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,212 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    /* Set direction to right-to-left for Hebrew */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    /* header stays above other content */
+    box-sizing: border-box;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .profile {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+}
+
+header .profile img {
+    border-radius: 50%;
+    margin-left: 10px;
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 60px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: rgba(47, 47, 47, 1);
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+.hero button {
+    width: 153px;
+    height: 30px;
+    background: #d147ca 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    border-color: white;
+    border-style: groove;
+    font-weight: bold;
+    color: aliceblue;
+
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero img {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 50%;
+}
+
+.hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.hero .skills {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.hero .skills img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    /* Combine margin-top and margin-bottom */
+}
+
+.about-me {
+    padding: 35px 0;
+    text-align: center;
+    background-color: rgba(21, 36, 90, 0.671);
+    color: white;
+    font-weight: bold;
+}
+
+.about-me h2 {
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.portfolio {
+    background-color: rgba(33, 33, 33, 1);
+    padding: 50px 0;
+    color: white;
+    width: 100%;
+    height: 650px;
+}
+
+.portfolio img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        border-style: groove;
+        margin-top: 30px;
+}
+
+.portfolio button {
+    background-color: rgb(126, 136, 224);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.container_rights {
+    display: flex;
+}
+
+.container_name {
+    display: flex;
+}
+
+.container_name p {
+    text-align: left;
+    margin-left: 0;
+    /* Fixed margin-left syntax */
+    width: 74px;
+    /* Fixed width and height syntax */
+    height: 29px;
+    font: normal normal normal 20px/29px Heebo;
+    letter-spacing: 0.5px;
+    color: #1AE0EC;
+    opacity: 1;
+}
+
+.container_rights p {
+    text-align: right;
+    margin: 0;
+    width: 148px;
+    /* Fixed width and height syntax */
+    height: 29px;
+    font: normal normal 300 20px/29px Heebo;
+    letter-spacing: 0;
+    opacity: 1;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-links {
+    margin-bottom: 10px;
+}
+
+footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: bold;
+
+}
